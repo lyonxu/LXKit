@@ -72,4 +72,12 @@
  */
 + (UIView *_Nullable)gradientViewFromLeftColor:(UIColor *_Nullable)leftColor toRightColor:(UIColor *_Nullable)rightColor;
 
+/**
+ set gradient background to this UIView, from left to right, with two color
+ 
+ @param leftColor   left color at location [0,0]
+ @param rightColor  right color at location [1,0]
+ */
+- (void)setGradientBackgroundFromLeftColor:(UIColor *_Nullable)leftColor toRightColor:(UIColor *_Nullable)rightColor;
+
 @end

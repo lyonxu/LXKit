@@ -39,6 +39,10 @@
 {
     return [[self class] gradientViewWithColors:@[leftColor, rightColor] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
 }
+- (void)setGradientBackgroundFromLeftColor:(UIColor *)leftColor toRightColor:(UIColor *)rightColor
+{
+    [self setGradientBackgroundWithColors:@[leftColor, rightColor] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
+}
 
 #pragma mark - Getter & Setter
 

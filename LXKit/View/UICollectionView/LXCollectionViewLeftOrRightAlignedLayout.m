@@ -1,9 +1,8 @@
 //
 //  LXCollectionViewLeftOrRightAlignedLayout.m
-//  LXKit
 //
-//  Created by Lyon.Xu on 2018/1/8.
-//  Copyright © 2018年 Lyon. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 #import "LXCollectionViewLeftOrRightAlignedLayout.h"

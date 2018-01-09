@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A28919F20037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h */; };
+		0A2891A220037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */; };
 		0A9642991FEB67CA0000150B /* UIView+LXGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9642971FEB67CA0000150B /* UIView+LXGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9642981FEB67CA0000150B /* UIView+LXGradient.m */; };
 		0AAD663D1FEA540F00D190FA /* LXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAD66331FEA540F00D190FA /* LXKit.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A28919F20037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCollectionViewLeftOrRightAlignedLayout.h; sourceTree = "<group>"; };
+		0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCollectionViewLeftOrRightAlignedLayout.m; sourceTree = "<group>"; };
 		0A9642971FEB67CA0000150B /* UIView+LXGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXGradient.h"; sourceTree = "<group>"; };
 		0A9642981FEB67CA0000150B /* UIView+LXGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXGradient.m"; sourceTree = "<group>"; };
 		0AAD66331FEA540F00D190FA /* LXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A28919E20037602009C1F87 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0A28919F20037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h */,
+				0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		0AAD66291FEA540F00D190FA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +142,7 @@
 		0AAD66581FEA567200D190FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A28919E20037602009C1F87 /* UICollectionView */,
 				0AAD66591FEA567200D190FA /* LXGradientView.h */,
 				0AAD665A1FEA567200D190FA /* LXGradientView.m */,
 			);
@@ -185,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AAD664F1FEA54BD00D190FA /* LXKit.h in Headers */,
+				0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */,
 				0AAD66621FEA56B400D190FA /* NSData+LXImageContentType.h in Headers */,
 				0ADCB37B1FF0AD5300683518 /* NSString+LXLength.h in Headers */,
 				0AAD665B1FEA567200D190FA /* LXGradientView.h in Headers */,
@@ -296,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2891A220037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */,
 				0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */,
 				0AAD66631FEA56B400D190FA /* NSData+LXImageContentType.m in Sources */,
 				0AAD665C1FEA567200D190FA /* LXGradientView.m in Sources */,

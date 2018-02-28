@@ -28,6 +28,8 @@
 		0ADCB37B1FF0AD5300683518 /* NSString+LXLength.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ADCB3791FF0AD5300683518 /* NSString+LXLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ADCB37C1FF0AD5300683518 /* NSString+LXLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCB37A1FF0AD5300683518 /* NSString+LXLength.m */; };
 		0ADCB37E1FF0AE1200683518 /* LXNSStringLengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCB37D1FF0AE1200683518 /* LXNSStringLengthTests.m */; };
+		0AFB3136204698420027BD7C /* NSObject+LXLogProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFB3134204698420027BD7C /* NSObject+LXLogProperties.h */; };
+		0AFB3137204698420027BD7C /* NSObject+LXLogProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB3135204698420027BD7C /* NSObject+LXLogProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		0ADCB3791FF0AD5300683518 /* NSString+LXLength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLength.h"; sourceTree = "<group>"; };
 		0ADCB37A1FF0AD5300683518 /* NSString+LXLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLength.m"; sourceTree = "<group>"; };
 		0ADCB37D1FF0AE1200683518 /* LXNSStringLengthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXNSStringLengthTests.m; sourceTree = "<group>"; };
+		0AFB3134204698420027BD7C /* NSObject+LXLogProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LXLogProperties.h"; sourceTree = "<group>"; };
+		0AFB3135204698420027BD7C /* NSObject+LXLogProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LXLogProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 				0AAD66601FEA56B300D190FA /* NSData+LXImageContentType.m */,
 				0ADCB3791FF0AD5300683518 /* NSString+LXLength.h */,
 				0ADCB37A1FF0AD5300683518 /* NSString+LXLength.m */,
+				0AFB3134204698420027BD7C /* NSObject+LXLogProperties.h */,
+				0AFB3135204698420027BD7C /* NSObject+LXLogProperties.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */,
 				0AAD66621FEA56B400D190FA /* NSData+LXImageContentType.h in Headers */,
 				0ADCB37B1FF0AD5300683518 /* NSString+LXLength.h in Headers */,
+				0AFB3136204698420027BD7C /* NSObject+LXLogProperties.h in Headers */,
 				0AAD665B1FEA567200D190FA /* LXGradientView.h in Headers */,
 				0A9642991FEB67CA0000150B /* UIView+LXGradient.h in Headers */,
 			);
@@ -316,6 +323,7 @@
 				0AAD66631FEA56B400D190FA /* NSData+LXImageContentType.m in Sources */,
 				0AAD665C1FEA567200D190FA /* LXGradientView.m in Sources */,
 				0ADCB37C1FF0AD5300683518 /* NSString+LXLength.m in Sources */,
+				0AFB3137204698420027BD7C /* NSObject+LXLogProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

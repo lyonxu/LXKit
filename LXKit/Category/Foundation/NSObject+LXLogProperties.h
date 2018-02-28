@@ -1,8 +1,8 @@
 //
-//  NSString+LXLength.h
+//  NSObject+LXLogProperties.h
 //
-//  Created by Lyon Xu on 2017/12/25.
-//  Copyright © 2017 Lyon. All rights reserved.
+//  Created by Lyon Xu on 2018/2/28.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,41 +26,18 @@
 // THE SOFTWARE.
 
 /**
- *  A category of NSString that can get the number of charactors (including Chinese).
+ *  A category of NSObject that can log all properties and values.
  *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
-
 #import <Foundation/Foundation.h>
 
-@interface NSString (LXLength)
+@interface NSObject (LXLogProperties)
 
 /**
- calulate the number of charactor.
- 1 Chinese(including Chinese mark) = 2
- 1 English or number = 1
- 1 emoji = 4
-
- @return NSUInteger
+ Log all properties and values on Console (Only first level property, nested customed object is not supported.)
  */
-- (NSUInteger)charactorNumber;
-
-/**
- calulate the number of charactor with designated NSStringEncoding.
-
- @param encoding NSStringEncoding
- @return NSUInteger
- */
-- (NSUInteger)charactorNumberWithEncoding:(NSStringEncoding)encoding;
-
-/**
- calulate the number of charactor.
- 1 Chinese(not including Chinese mark) = 2
- 1 other charactor = 1
-
- @return NSUInteger
- */
-- (NSUInteger)charactorNumberForChineseSpecial;
+- (void)logAllProperties;
 
 @end

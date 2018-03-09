@@ -11,6 +11,8 @@
 		0A2891A220037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */; };
 		0A9642991FEB67CA0000150B /* UIView+LXGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9642971FEB67CA0000150B /* UIView+LXGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9642981FEB67CA0000150B /* UIView+LXGradient.m */; };
+		0A977F2320527A1E0078F0E5 /* NSString+LXSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A977F2120527A1E0078F0E5 /* NSString+LXSecurity.h */; };
+		0A977F2420527A1E0078F0E5 /* NSString+LXSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A977F2220527A1E0078F0E5 /* NSString+LXSecurity.m */; };
 		0AAD663D1FEA540F00D190FA /* LXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAD66331FEA540F00D190FA /* LXKit.framework */; };
 		0AAD664F1FEA54BD00D190FA /* LXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAD664E1FEA54BC00D190FA /* LXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AAD665B1FEA567200D190FA /* LXGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAD66591FEA567200D190FA /* LXGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +49,8 @@
 		0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCollectionViewLeftOrRightAlignedLayout.m; sourceTree = "<group>"; };
 		0A9642971FEB67CA0000150B /* UIView+LXGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXGradient.h"; sourceTree = "<group>"; };
 		0A9642981FEB67CA0000150B /* UIView+LXGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXGradient.m"; sourceTree = "<group>"; };
+		0A977F2120527A1E0078F0E5 /* NSString+LXSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXSecurity.h"; sourceTree = "<group>"; };
+		0A977F2220527A1E0078F0E5 /* NSString+LXSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXSecurity.m"; sourceTree = "<group>"; };
 		0AAD66331FEA540F00D190FA /* LXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAD663C1FEA540F00D190FA /* LXKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAD66431FEA540F00D190FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				0AAD66601FEA56B300D190FA /* NSData+LXImageContentType.m */,
 				0ADCB3791FF0AD5300683518 /* NSString+LXLength.h */,
 				0ADCB37A1FF0AD5300683518 /* NSString+LXLength.m */,
+				0A977F2120527A1E0078F0E5 /* NSString+LXSecurity.h */,
+				0A977F2220527A1E0078F0E5 /* NSString+LXSecurity.m */,
 				0AFB3134204698420027BD7C /* NSObject+LXLogProperties.h */,
 				0AFB3135204698420027BD7C /* NSObject+LXLogProperties.m */,
 			);
@@ -206,6 +212,7 @@
 			files = (
 				0AAD664F1FEA54BD00D190FA /* LXKit.h in Headers */,
 				0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */,
+				0A977F2320527A1E0078F0E5 /* NSString+LXSecurity.h in Headers */,
 				0AAD66621FEA56B400D190FA /* NSData+LXImageContentType.h in Headers */,
 				0ADCB37B1FF0AD5300683518 /* NSString+LXLength.h in Headers */,
 				0AFB3136204698420027BD7C /* NSObject+LXLogProperties.h in Headers */,
@@ -322,6 +329,7 @@
 				0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */,
 				0AAD66631FEA56B400D190FA /* NSData+LXImageContentType.m in Sources */,
 				0AAD665C1FEA567200D190FA /* LXGradientView.m in Sources */,
+				0A977F2420527A1E0078F0E5 /* NSString+LXSecurity.m in Sources */,
 				0ADCB37C1FF0AD5300683518 /* NSString+LXLength.m in Sources */,
 				0AFB3137204698420027BD7C /* NSObject+LXLogProperties.m in Sources */,
 			);

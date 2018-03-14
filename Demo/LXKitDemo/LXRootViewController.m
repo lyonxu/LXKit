@@ -24,7 +24,8 @@
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     
-    [self addCell:@"View" class:@"LXViewController"];
+    [self addCell:@"Show Custom View" class:@"LXViewController"];
+    [self addCell:@"Show Custom Navigation Bar (LXNavigationController)" class:@"LXTestNavigationBarVC"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +52,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCellIdentifierLX"];
     }
     cell.textLabel.text = _titles[indexPath.row];
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
     return cell;
 }
 

@@ -18,9 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UILabel *titleLabel = [UILabel new];
+    [titleLabel setTextColor:[UIColor blackColor]];
+    titleLabel.font = [UIFont systemFontOfSize:12];
+    titleLabel.text = @"LXGradientView";
+    [titleLabel sizeToFit];
+    titleLabel.left = 10;
+    titleLabel.top = 100;
+    [self.view addSubview:titleLabel];
+    
     NSArray *colors = [NSArray arrayWithObjects:(id)[UIColor redColor].CGColor, (id)[UIColor orangeColor].CGColor, nil];
     LXGradientView *gradientView = [[LXGradientView alloc] initWithColors:colors];
-    gradientView.frame = CGRectMake(50, 100, 200, 44);
+    gradientView.frame = CGRectMake(0, 0, 200, 44);
+    gradientView.left = titleLabel.right + 10;
+    gradientView.centerY = titleLabel.centerY;
     [self.view addSubview:gradientView];
 }
 
@@ -28,15 +39,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

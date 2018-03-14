@@ -30,6 +30,30 @@
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
+
+/**
+ how to use :
+ 
+ !!!
+ Important
+ !!!
+ When you set the title or BarButtonItem, you must do it in these mothods :
+ - (void)viewWillAppear:(BOOL)animated;
+ or
+ - (void)viewDidAppear:(BOOL)animated;
+ 
+ As default,
+ 1. LXNavigationController's Navigation Bar has a left BarButtonItem with title of 'Back', used to pop ViewController.
+ 2. Has no title and right BarButtonItem.
+ 
+ If you want to show the original Navigation Bar within UINavigationController, use this to init LXNavigationController :
+ - (instancetype)initWithRootViewController:(UIViewController *)rootViewController hideOriginalBar:(BOOL)hideOriginalBar;
+ Otherwise, call :
+ - (instancetype)initWithRootViewController:(UIViewController *)rootViewController;
+ 
+ */
+
+
 #import <UIKit/UIKit.h>
 
 @interface LXNavigationController : UINavigationController

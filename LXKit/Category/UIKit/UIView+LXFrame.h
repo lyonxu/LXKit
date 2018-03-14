@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  UIView+LXFrame.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2017 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,29 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
+ *  A category of UIView that can set the frame conveniently.
  *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+@interface UIView (LXFrame)
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+@property (nonatomic, assign) CGFloat top;
+@property (nonatomic, assign) CGFloat bottom;
+@property (nonatomic, assign) CGFloat left;
+@property (nonatomic, assign) CGFloat right;
 
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGPoint origin;
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
+@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat centerY;
 
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGSize  size;
 
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+@end

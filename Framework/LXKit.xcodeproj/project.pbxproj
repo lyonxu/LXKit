@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A28919F20037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h */; };
 		0A2891A220037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */; };
+		0A7718782058EFFD00893BC1 /* LXNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7718762058EFFD00893BC1 /* LXNavigationBar.h */; };
+		0A7718792058EFFD00893BC1 /* LXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7718772058EFFD00893BC1 /* LXNavigationBar.m */; };
+		0A77187E2058F0BF00893BC1 /* UIViewController+LXNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A77187C2058F0BF00893BC1 /* UIViewController+LXNavigation.h */; };
+		0A77187F2058F0BF00893BC1 /* UIViewController+LXNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77187D2058F0BF00893BC1 /* UIViewController+LXNavigation.m */; };
+		0A7718822058F0EE00893BC1 /* LXNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7718802058F0EE00893BC1 /* LXNavigationItem.h */; };
+		0A7718832058F0EE00893BC1 /* LXNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7718812058F0EE00893BC1 /* LXNavigationItem.m */; };
+		0A7718862058F10300893BC1 /* LXBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7718842058F10300893BC1 /* LXBarButtonItem.h */; };
+		0A7718872058F10300893BC1 /* LXBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7718852058F10300893BC1 /* LXBarButtonItem.m */; };
+		0A77188A2058F12A00893BC1 /* LXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7718882058F12A00893BC1 /* LXNavigationController.h */; };
+		0A77188B2058F12A00893BC1 /* LXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7718892058F12A00893BC1 /* LXNavigationController.m */; };
+		0A77188E2059023300893BC1 /* UIView+LXFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A77188C2059023300893BC1 /* UIView+LXFrame.h */; };
+		0A77188F2059023300893BC1 /* UIView+LXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77188D2059023300893BC1 /* UIView+LXFrame.m */; };
 		0A9642991FEB67CA0000150B /* UIView+LXGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9642971FEB67CA0000150B /* UIView+LXGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9642981FEB67CA0000150B /* UIView+LXGradient.m */; };
 		0A977F2320527A1E0078F0E5 /* NSString+LXSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A977F2120527A1E0078F0E5 /* NSString+LXSecurity.h */; };
@@ -47,6 +59,20 @@
 /* Begin PBXFileReference section */
 		0A28919F20037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCollectionViewLeftOrRightAlignedLayout.h; sourceTree = "<group>"; };
 		0A2891A020037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCollectionViewLeftOrRightAlignedLayout.m; sourceTree = "<group>"; };
+		0A7718762058EFFD00893BC1 /* LXNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNavigationBar.h; sourceTree = "<group>"; };
+		0A7718772058EFFD00893BC1 /* LXNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXNavigationBar.m; sourceTree = "<group>"; };
+		0A77187A2058F06900893BC1 /* LXNavigationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNavigationDefines.h; sourceTree = "<group>"; };
+		0A77187B2058F08200893BC1 /* LXNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNavigation.h; sourceTree = "<group>"; };
+		0A77187C2058F0BF00893BC1 /* UIViewController+LXNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LXNavigation.h"; sourceTree = "<group>"; };
+		0A77187D2058F0BF00893BC1 /* UIViewController+LXNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LXNavigation.m"; sourceTree = "<group>"; };
+		0A7718802058F0EE00893BC1 /* LXNavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNavigationItem.h; sourceTree = "<group>"; };
+		0A7718812058F0EE00893BC1 /* LXNavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXNavigationItem.m; sourceTree = "<group>"; };
+		0A7718842058F10300893BC1 /* LXBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBarButtonItem.h; sourceTree = "<group>"; };
+		0A7718852058F10300893BC1 /* LXBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBarButtonItem.m; sourceTree = "<group>"; };
+		0A7718882058F12A00893BC1 /* LXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXNavigationController.h; sourceTree = "<group>"; };
+		0A7718892058F12A00893BC1 /* LXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXNavigationController.m; sourceTree = "<group>"; };
+		0A77188C2059023300893BC1 /* UIView+LXFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXFrame.h"; sourceTree = "<group>"; };
+		0A77188D2059023300893BC1 /* UIView+LXFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXFrame.m"; sourceTree = "<group>"; };
 		0A9642971FEB67CA0000150B /* UIView+LXGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXGradient.h"; sourceTree = "<group>"; };
 		0A9642981FEB67CA0000150B /* UIView+LXGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXGradient.m"; sourceTree = "<group>"; };
 		0A977F2120527A1E0078F0E5 /* NSString+LXSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXSecurity.h"; sourceTree = "<group>"; };
@@ -104,6 +130,25 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		0A7718752058EFD700893BC1 /* LXNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				0A77187B2058F08200893BC1 /* LXNavigation.h */,
+				0A77187A2058F06900893BC1 /* LXNavigationDefines.h */,
+				0A77187C2058F0BF00893BC1 /* UIViewController+LXNavigation.h */,
+				0A77187D2058F0BF00893BC1 /* UIViewController+LXNavigation.m */,
+				0A7718762058EFFD00893BC1 /* LXNavigationBar.h */,
+				0A7718772058EFFD00893BC1 /* LXNavigationBar.m */,
+				0A7718802058F0EE00893BC1 /* LXNavigationItem.h */,
+				0A7718812058F0EE00893BC1 /* LXNavigationItem.m */,
+				0A7718842058F10300893BC1 /* LXBarButtonItem.h */,
+				0A7718852058F10300893BC1 /* LXBarButtonItem.m */,
+				0A7718882058F12A00893BC1 /* LXNavigationController.h */,
+				0A7718892058F12A00893BC1 /* LXNavigationController.m */,
+			);
+			path = LXNavigationBar;
+			sourceTree = "<group>";
+		};
 		0AAD66291FEA540F00D190FA = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +195,7 @@
 		0AAD66581FEA567200D190FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A7718752058EFD700893BC1 /* LXNavigationBar */,
 				0A28919E20037602009C1F87 /* UICollectionView */,
 				0AAD66591FEA567200D190FA /* LXGradientView.h */,
 				0AAD665A1FEA567200D190FA /* LXGradientView.m */,
@@ -186,6 +232,8 @@
 			children = (
 				0A9642971FEB67CA0000150B /* UIView+LXGradient.h */,
 				0A9642981FEB67CA0000150B /* UIView+LXGradient.m */,
+				0A77188C2059023300893BC1 /* UIView+LXFrame.h */,
+				0A77188D2059023300893BC1 /* UIView+LXFrame.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -211,11 +259,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AAD664F1FEA54BD00D190FA /* LXKit.h in Headers */,
+				0A7718782058EFFD00893BC1 /* LXNavigationBar.h in Headers */,
 				0A2891A120037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.h in Headers */,
 				0A977F2320527A1E0078F0E5 /* NSString+LXSecurity.h in Headers */,
 				0AAD66621FEA56B400D190FA /* NSData+LXImageContentType.h in Headers */,
+				0A77188A2058F12A00893BC1 /* LXNavigationController.h in Headers */,
 				0ADCB37B1FF0AD5300683518 /* NSString+LXLength.h in Headers */,
 				0AFB3136204698420027BD7C /* NSObject+LXLogProperties.h in Headers */,
+				0A7718862058F10300893BC1 /* LXBarButtonItem.h in Headers */,
+				0A77188E2059023300893BC1 /* UIView+LXFrame.h in Headers */,
+				0A77187E2058F0BF00893BC1 /* UIViewController+LXNavigation.h in Headers */,
+				0A7718822058F0EE00893BC1 /* LXNavigationItem.h in Headers */,
 				0AAD665B1FEA567200D190FA /* LXGradientView.h in Headers */,
 				0A9642991FEB67CA0000150B /* UIView+LXGradient.h in Headers */,
 			);
@@ -325,12 +379,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A77188F2059023300893BC1 /* UIView+LXFrame.m in Sources */,
+				0A7718872058F10300893BC1 /* LXBarButtonItem.m in Sources */,
+				0A7718832058F0EE00893BC1 /* LXNavigationItem.m in Sources */,
 				0A2891A220037645009C1F87 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */,
 				0A96429A1FEB67CA0000150B /* UIView+LXGradient.m in Sources */,
 				0AAD66631FEA56B400D190FA /* NSData+LXImageContentType.m in Sources */,
 				0AAD665C1FEA567200D190FA /* LXGradientView.m in Sources */,
 				0A977F2420527A1E0078F0E5 /* NSString+LXSecurity.m in Sources */,
+				0A77188B2058F12A00893BC1 /* LXNavigationController.m in Sources */,
+				0A7718792058EFFD00893BC1 /* LXNavigationBar.m in Sources */,
 				0ADCB37C1FF0AD5300683518 /* NSString+LXLength.m in Sources */,
+				0A77187F2058F0BF00893BC1 /* UIViewController+LXNavigation.m in Sources */,
 				0AFB3137204698420027BD7C /* NSObject+LXLogProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

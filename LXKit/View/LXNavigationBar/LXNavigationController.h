@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  LXNavigationController.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,28 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
- *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+@interface LXNavigationController : UINavigationController
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+/**
+ init with RootViewController (default to hide the UINavigationController's navigationBar, just show the new custom LXNavigationController's bar)
+ 
+ @param rootViewController      rootViewController
+ @return LXNavigationController
+ */
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController;
 
+/**
+ init with RootViewController, can show or hide the UINavigationController's navigationBar
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
+ @param rootViewController      rootViewController
+ @param hideOriginalBar         hide the UINavigationController's navigationBar
+ @return LXNavigationController
+ */
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController hideOriginalBar:(BOOL)hideOriginalBar;
 
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
-
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+@end

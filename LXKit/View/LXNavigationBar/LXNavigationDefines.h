@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  LXNavigationDefines.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,18 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
- *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
-#import <UIKit/UIKit.h>
+#define IsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+#define kNavigationBarTintColor         [UIColor blackColor]
+#define kNavigationBarColor             [UIColor colorWithWhite:1.00 alpha:0.980]
+#define kNavigationBarLineColor         [UIColor colorWithWhite:0.869 alpha:1]
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+#define kNavigationBarTitleFont         [UIFont systemFontOfSize:18]
+#define kNavigationBarButtonItemFont    [UIFont systemFontOfSize:16]
 
-
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
-
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
-
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+#define kNavigationBarHeight            44
+#define kNavigationBarStatusBarHeight   (IsiPhoneX ? 44 : 20)
+#define kNavigationTotalHeight          (kNavigationBarHeight+kNavigationBarStatusBarHeight)

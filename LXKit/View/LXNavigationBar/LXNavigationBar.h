@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  LXNavigationBar.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,37 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
- *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+@interface LXNavigationBar : UIView
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+/**
+ navigation bar's background color
+ */
+@property (nonatomic, copy, readwrite   ) UIColor   *navBackgroundColor;
 
+/**
+ navigation bar's background view
+ */
+@property (nonatomic, copy, readwrite   ) UIView    *navBackgroundView;
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
+/**
+ line's background color at the bottom
+ */
+@property (nonatomic, copy, readwrite   ) UIColor   *bottomLineBackgroundColor;
+/**
+ set the bottom line's hidden
+ */
+@property (nonatomic, assign, readwrite ) BOOL      isBottomLineHidden;
 
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
+/**
+ set the navigation bar's height
+ 
+ @param height      navigation bar's height
+ */
+- (void)setNavigationBarHeight:(CGFloat)height;
 
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+@end

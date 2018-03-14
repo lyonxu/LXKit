@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  LXNavigationItem.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,21 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
- *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+@class LXBarButtonItem;
+@interface LXNavigationItem : NSObject
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+@property (nonatomic, strong  ) LXBarButtonItem     *leftBarButtonItem;
+@property (nonatomic, strong  ) LXBarButtonItem     *rightBarButtonItem;
+@property (nonatomic, copy    ) NSString            *title;
 
+@property (nonatomic, readonly) UIView              *titleView;
+@property (nonatomic, strong  ) UILabel             *titleLabel;
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
-
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
-
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+- (void)setTitleColor:(UIColor *)color;
+@end

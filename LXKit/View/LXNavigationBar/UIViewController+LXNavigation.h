@@ -1,8 +1,9 @@
 //
-//  LXKit.h
+//  UIViewController+LXNavigation.h
+//  LXKit
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2018/1/8.
+//  Copyright © 2018 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,31 +27,33 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
- *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
 #import <UIKit/UIKit.h>
+#import "LXNavigationBar.h"
+#import "LXNavigationItem.h"
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+@interface UIViewController (LXNavigation)
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+@property(nonatomic, getter = lx_isNavigationBarHidden) BOOL lx_navigationBarHidden;
 
+@property(nonatomic, strong) LXNavigationBar *lx_navigationBar;
+@property(nonatomic, strong) LXNavigationItem *lx_navigationItem;
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
+/**
+ hide or show navigation bar
+ 
+ @param hidden      YES：hide，NO：show
+ @param animated    whether to animate
+ */
+- (void)lx_setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated;
 
-// Foundation on category
-#import "NSData+LXImageContentType.h"
-#import "NSString+LXLength.h"
+/**
+ set the navigation bar's height
+ 
+ @param height      navigation bar's height
+ */
+- (void)lx_setNavigationBarHeight:(CGFloat)height;
 
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
-
-// Navigation Bar
-#import "LXNavigation.h"
+@end

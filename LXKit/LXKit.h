@@ -46,7 +46,11 @@ FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
 
 // Foundation on category
 #import "NSData+LXImageContentType.h"
+
 #import "NSString+LXLength.h"
+#import "NSString+LXSecurity.h"
+
+#import "NSObject+LXLogProperties.h"
 
 // UIKit on category
 #import "UIView+LXGradient.h"

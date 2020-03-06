@@ -45,6 +45,8 @@ Create a gradient view.
 
 Create a customized scroll bar while using a UIScrollView, like UICollectionView、UITableView etc.
 
+![LXSlideIndicator demo](Demo/LXKitDemo/DemoImages/CustomizedScrollBar.gif)
+
 ## Installation
 
 ### CocoaPods

@@ -1,8 +1,8 @@
 //
-//  LXKit.h
+//  LXSlideIndicator.h
 //
-//  Created by Lyon Xu on 2017/12/20.
-//  Copyright © 2017 Lyon Xu. All rights reserved.
+//  Created by Lyon Xu on 2020/3/5.
+//  Copyright © 2020 Lyon. All rights reserved.
 //
 
 // This code is distributed under the terms and conditions of the MIT license.
@@ -26,36 +26,64 @@
 // THE SOFTWARE.
 
 /**
- *  Include the header files of all components in LXKit
+ *  Create a customized scroll bar while using a UIScrollView, like UICollectionView、UITableView etc.
+ *  自定义滚动条
  *
  *  Source code on github : https://github.com/lyonxu/LXKit
  */
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for LXKit.
-FOUNDATION_EXPORT double LXKitVersionNumber;
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version string for LXKit.
-FOUNDATION_EXPORT const unsigned char LXKitVersionString[];
+@interface LXSlideIndicatorConfig : NSObject
 
+/**
+ 视图整体的宽度
+ */
+@property (nonatomic, assign) CGFloat width;
+/**
+ 视图整体的高度
+ */
+@property (nonatomic, assign) CGFloat height;
+/**
+ 背景颜色
+ */
+@property (nonatomic, strong) UIColor *backgroundColor;
 
-// View
-#import "LXGradientView.h"
-#import "LXCollectionViewLeftOrRightAlignedLayout.h"
-#import "LXSlideIndicator.h"
+/**
+ 滑块的颜色
+ */
+@property (nonatomic, strong) UIColor *slideViewColor;
+/**
+ 滑块的宽度，默认为视图整体宽度width的一半
+ */
+@property (nonatomic, assign) CGFloat slideViewWidth;
 
-// Foundation on category
-#import "NSData+LXImageContentType.h"
+@end
 
-#import "NSString+LXLength.h"
-#import "NSString+LXSecurity.h"
+@interface LXSlideIndicator : UIView
 
-#import "NSObject+LXLogProperties.h"
+/**
+ 视图的相关配置
+ */
+@property (nonatomic, strong) LXSlideIndicatorConfig *config;
 
-// UIKit on category
-#import "UIView+LXGradient.h"
-#import "UIView+LXFrame.h"
+/**
+ 初始化方法
 
-// Navigation Bar
-#import "LXNavigation.h"
+ @param config 相关配置
+ @return LXSlideIndicator实例
+ */
+- (instancetype)initWithConfig:(LXSlideIndicatorConfig *)config;
+
+/**
+ 相关联的scrollView的滚动事件
+
+ @param scrollView 相关联的scrollView对象
+ */
+- (void)scrollViewRelativeDidScroll:(UIScrollView *)scrollView;
+
+@end
+
+NS_ASSUME_NONNULL_END

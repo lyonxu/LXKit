@@ -26,6 +26,8 @@
     
     [self addCell:@"Show Custom View" class:@"LXViewController"];
     [self addCell:@"Show Custom Navigation Bar (LXNavigationController)" class:@"LXTestNavigationBarVC"];
+    [self addCell:@"Show Indicator View" class:@"LXIndicatorViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -29,6 +29,8 @@
 		0AAD66AF1FEA5B9500D190FA /* NSData+LXImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD66A91FEA5B9400D190FA /* NSData+LXImageContentType.m */; };
 		0AAD66B01FEA5B9500D190FA /* LXGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD66AE1FEA5B9400D190FA /* LXGradientView.m */; };
 		0AAD66B41FEA5D4500D190FA /* LXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD66B31FEA5D4500D190FA /* LXViewController.m */; };
+		B63AE0D72412390D00F4BBAB /* LXIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63AE0D52412390D00F4BBAB /* LXIndicatorViewController.m */; };
+		B63AE0DA2412393800F4BBAB /* LXSlideIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B63AE0D82412393700F4BBAB /* LXSlideIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,10 @@
 		0AAD66AE1FEA5B9400D190FA /* LXGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGradientView.m; sourceTree = "<group>"; };
 		0AAD66B21FEA5D4500D190FA /* LXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXViewController.h; sourceTree = "<group>"; };
 		0AAD66B31FEA5D4500D190FA /* LXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXViewController.m; sourceTree = "<group>"; };
+		B63AE0D52412390D00F4BBAB /* LXIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXIndicatorViewController.m; sourceTree = "<group>"; };
+		B63AE0D62412390D00F4BBAB /* LXIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXIndicatorViewController.h; sourceTree = "<group>"; };
+		B63AE0D82412393700F4BBAB /* LXSlideIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSlideIndicator.m; sourceTree = "<group>"; };
+		B63AE0D92412393700F4BBAB /* LXSlideIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSlideIndicator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +266,8 @@
 				0A2DD20A205912CC00F80544 /* UICollectionView */,
 				0AAD66AD1FEA5B9400D190FA /* LXGradientView.h */,
 				0AAD66AE1FEA5B9400D190FA /* LXGradientView.m */,
+				B63AE0D92412393700F4BBAB /* LXSlideIndicator.h */,
+				B63AE0D82412393700F4BBAB /* LXSlideIndicator.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +281,8 @@
 				0A2DD214205913A700F80544 /* LXTestNavigationBarVC.m */,
 				0A2DD2162059154000F80544 /* LXShowingNavBarViewController.h */,
 				0A2DD2172059154000F80544 /* LXShowingNavBarViewController.m */,
+				B63AE0D62412390D00F4BBAB /* LXIndicatorViewController.h */,
+				B63AE0D52412390D00F4BBAB /* LXIndicatorViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +428,7 @@
 				0A2DD1F4205912A600F80544 /* NSObject+LXLogProperties.m in Sources */,
 				0AAD66AF1FEA5B9500D190FA /* NSData+LXImageContentType.m in Sources */,
 				0A2DD212205912CD00F80544 /* LXCollectionViewLeftOrRightAlignedLayout.m in Sources */,
+				B63AE0D72412390D00F4BBAB /* LXIndicatorViewController.m in Sources */,
 				0A2DD2182059154000F80544 /* LXShowingNavBarViewController.m in Sources */,
 				0AAD66B41FEA5D4500D190FA /* LXViewController.m in Sources */,
 				0A2DD20F205912CD00F80544 /* LXNavigationController.m in Sources */,
@@ -427,6 +438,7 @@
 				0AAD66721FEA5A0A00D190FA /* AppDelegate.m in Sources */,
 				0A2DD215205913A700F80544 /* LXTestNavigationBarVC.m in Sources */,
 				0A2DD1F5205912A600F80544 /* NSString+LXLength.m in Sources */,
+				B63AE0DA2412393800F4BBAB /* LXSlideIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
